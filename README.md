@@ -4,12 +4,17 @@
 
 I'm using this repo as notebooks storage for Udemy Machine Learning Course
 
-## Set UP
+## Setting UP
+
+### Install dependencies
+
+This software requires [GraphViz](http://www.graphviz.org/Download..php) to be installed
+* [Arch Wiki](https://wiki.archlinux.org/index.php/Graphviz) pacman -S graphviz
+* [Homebrew](http://brewformulas.org/Graphviz) brew install graphviz
 
 ### Create virtualenv
 
-Setup the project by installing binary dependencies (see notes section below).
-Then create new virtualenv by running
+Create new virtualenv by running
 ```
 virtualenv .env
 ```
@@ -35,9 +40,14 @@ pip install -r requirements.txt
 ```
 in project root directory
 
+## Running notebooks
+
+run
+```
+jupyter notebook
+```
+in project root dir
+
 ## Notes
 
-* This software requires [GraphViz](http://www.graphviz.org/Download..php) to be installed
-  * [Arch Wiki](https://wiki.archlinux.org/index.php/Graphviz) pacman -S graphviz
-  * [Homebrew](http://brewformulas.org/Graphviz) brew install graphviz
 * When you add any pip dependency type `pip freeze > requirements.txt` in project root dir to update requirements.txt file
